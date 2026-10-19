@@ -152,7 +152,7 @@ export default function SettingsScreen() {
       <Pressable
         onPress={handleLogout}
         disabled={loggingOut}
-        className="mt-6 flex-row items-center justify-center gap-2 rounded-2xl border border-destructive/30 bg-destructive/10 p-4 active:opacity-70 disabled:opacity-50"
+        className="mt-6 mb-8 flex-row items-center justify-center gap-2 rounded-2xl border border-destructive/30 bg-destructive/10 p-4 active:opacity-70 disabled:opacity-50"
       >
         <Icon as={LogOut} className="text-destructive" size={20} />
         <Text className="font-semibold text-destructive">

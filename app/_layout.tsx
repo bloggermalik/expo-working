@@ -23,8 +23,8 @@ function RootNavigator() {
         <Stack.Screen name="(app)" />
       </Stack.Protected>
       <Stack.Protected guard={!session}>
-        <Stack.Screen name="login" />
         <Stack.Screen name="sign-up" />
+        <Stack.Screen name="login" />
       </Stack.Protected>
     </Stack>
   );
@@ -32,8 +32,6 @@ function RootNavigator() {
 
 export default function RootLayout() {
   const { colorScheme } = useColorScheme();
-
-
   return (
     <ThemeProvider value={NAV_THEME[colorScheme ?? 'light']}>
       <StatusBar style={colorScheme === 'dark' ? 'light' : 'dark'} />
