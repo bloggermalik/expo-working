@@ -11,13 +11,15 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.bloggermalik.test"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.bloggermalik.test"
     },
     "web": {
       "bundler": "metro",
@@ -34,8 +36,14 @@
           "backgroundColor": "#ffffff"
         }
       ],
+      [
+        "expo-navigation-bar",
+        {
+          "enforceContrast": false,
+          "style": "light"
+        }
+      ],
       "expo-status-bar",
-      "@clerk/expo",
       "expo-secure-store",
       "expo-web-browser"
     ],
